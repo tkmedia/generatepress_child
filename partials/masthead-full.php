@@ -228,6 +228,7 @@ while( have_rows('mhfs') ): the_row();
 								<?php } ?>
 								</div>
 								<?php if( $slider_form ) { ?>
+								<style>.slider_form_id input.wpcf7-form-control.wpcf7-submit {background:<?php echo $slider_btnco; ?>;background-color:<?php echo $slider_btnco; ?>;}</style>
 								<div class="main_slider_inner_form col-xs-12 col-sm-6">
 									
 									<div class="slider-form-wrap">
