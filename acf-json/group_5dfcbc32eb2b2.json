@@ -910,7 +910,8 @@
                     "return_format": "value",
                     "acfe_settings": "",
                     "acfe_validate": "",
-                    "save_other_choice": 0
+                    "save_other_choice": 0,
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5f6a33dcb4715",
@@ -925,6 +926,11 @@
                                 "field": "field_5e678decc266c",
                                 "operator": "==",
                                 "value": "images"
+                            },
+                            {
+                                "field": "field_5e678decc266c",
+                                "operator": "==",
+                                "value": "images-form"
                             }
                         ]
                     ],
@@ -940,7 +946,8 @@
                     "acfe_settings": "",
                     "acfe_validate": "",
                     "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ui_off_text": "",
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5ebd95c9e4248",
@@ -977,7 +984,8 @@
                     "acfe_settings": "",
                     "acfe_validate": "",
                     "ajax": 0,
-                    "placeholder": ""
+                    "placeholder": "",
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5f35737ba9178",
@@ -1015,7 +1023,8 @@
                     },
                     "acfe_settings": "",
                     "acfe_validate": "",
-                    "ui": 1
+                    "ui": 1,
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5e6b52c9747d0",
@@ -1039,7 +1048,8 @@
                     "max": 100,
                     "step": 1,
                     "acfe_settings": "",
-                    "acfe_validate": ""
+                    "acfe_validate": "",
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5e678b29c76b7",
@@ -1061,7 +1071,8 @@
                     "acfe_settings": "",
                     "acfe_validate": "",
                     "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ui_off_text": "",
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5e6e3094e266d",
@@ -1083,7 +1094,8 @@
                     "acfe_settings": "",
                     "acfe_validate": "",
                     "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ui_off_text": "",
+                    "acfe_form": true
                 },
                 {
                     "key": "field_5e4135062ce72",
@@ -2274,14 +2286,14 @@
                 "param": "post_type",
                 "operator": "!=",
                 "value": "gp_elements"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "all"
             }
         ],
         [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
             {
                 "param": "page_type",
                 "operator": "==",
@@ -2313,5 +2325,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1600795835
+    "modified": 1601379885
 }
