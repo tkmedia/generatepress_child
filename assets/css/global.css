@@ -1114,8 +1114,7 @@ button.section_readmore_link {padding: 15px 40px;}
 .title_wrap_start.style_line:after, 
 .media_content_title_wrap.style_line .full_content_title.title_strat:after {content: '';position: absolute;border-bottom: 3px solid #ff6a29;right: 0;height: 2px;bottom: 0;width: 50px;left: auto;margin: auto;}
 .title_wrap_center.style_line, 
-.title_wrap_start.style_line, 
-.media_content_title_wrap.style_line .full_content_title.title_strat {padding-bottom: 15px;margin-bottom: 35px;}
+.title_wrap_start.style_line {padding-bottom: 15px;margin-bottom: 35px;}
 
 .title_start {text-align: right !important;text-align: start !important;}
 
