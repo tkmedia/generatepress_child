@@ -915,6 +915,7 @@ acf_add_local_field_group(array(
 					'acfe_settings' => '',
 					'acfe_validate' => '',
 					'save_other_choice' => 0,
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5f6a33dcb4715',
@@ -929,6 +930,11 @@ acf_add_local_field_group(array(
 								'field' => 'field_5e678decc266c',
 								'operator' => '==',
 								'value' => 'images',
+							),
+							array(
+								'field' => 'field_5e678decc266c',
+								'operator' => '==',
+								'value' => 'images-form',
 							),
 						),
 					),
@@ -945,6 +951,7 @@ acf_add_local_field_group(array(
 					'acfe_validate' => '',
 					'ui_on_text' => '',
 					'ui_off_text' => '',
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5ebd95c9e4248',
@@ -982,6 +989,7 @@ acf_add_local_field_group(array(
 					'acfe_validate' => '',
 					'ajax' => 0,
 					'placeholder' => '',
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5f35737ba9178',
@@ -1020,6 +1028,7 @@ acf_add_local_field_group(array(
 					'acfe_settings' => '',
 					'acfe_validate' => '',
 					'ui' => 1,
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5e6b52c9747d0',
@@ -1044,6 +1053,7 @@ acf_add_local_field_group(array(
 					'step' => 1,
 					'acfe_settings' => '',
 					'acfe_validate' => '',
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5e678b29c76b7',
@@ -1066,6 +1076,7 @@ acf_add_local_field_group(array(
 					'acfe_validate' => '',
 					'ui_on_text' => '',
 					'ui_off_text' => '',
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5e6e3094e266d',
@@ -1088,6 +1099,7 @@ acf_add_local_field_group(array(
 					'acfe_validate' => '',
 					'ui_on_text' => '',
 					'ui_off_text' => '',
+					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5e4135062ce72',
@@ -2279,13 +2291,13 @@ acf_add_local_field_group(array(
 				'operator' => '!=',
 				'value' => 'gp_elements',
 			),
-			array(
-				'param' => 'post_type',
-				'operator' => '!=',
-				'value' => 'all',
-			),
 		),
 		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'page',
+			),
 			array(
 				'param' => 'page_type',
 				'operator' => '==',
@@ -2317,6 +2329,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 1,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1600795835,
+	'modified' => 1601379885,
 ));
+
 endif;
