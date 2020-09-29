@@ -928,13 +928,8 @@ acf_add_local_field_group(array(
 						array(
 							array(
 								'field' => 'field_5e678decc266c',
-								'operator' => '==',
-								'value' => 'images',
-							),
-							array(
-								'field' => 'field_5e678decc266c',
-								'operator' => '==',
-								'value' => 'images-form',
+								'operator' => '!=',
+								'value' => 'video',
 							),
 						),
 					),
@@ -951,7 +946,6 @@ acf_add_local_field_group(array(
 					'acfe_validate' => '',
 					'ui_on_text' => '',
 					'ui_off_text' => '',
-					'acfe_form' => true,
 				),
 				array(
 					'key' => 'field_5ebd95c9e4248',
@@ -2329,7 +2323,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 1,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1601379885,
+	'modified' => 1601380250,
 ));
 
 endif;
