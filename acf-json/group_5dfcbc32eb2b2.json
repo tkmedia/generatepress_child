@@ -924,13 +924,8 @@
                         [
                             {
                                 "field": "field_5e678decc266c",
-                                "operator": "==",
-                                "value": "images"
-                            },
-                            {
-                                "field": "field_5e678decc266c",
-                                "operator": "==",
-                                "value": "images-form"
+                                "operator": "!=",
+                                "value": "video"
                             }
                         ]
                     ],
@@ -946,8 +941,7 @@
                     "acfe_settings": "",
                     "acfe_validate": "",
                     "ui_on_text": "",
-                    "ui_off_text": "",
-                    "acfe_form": true
+                    "ui_off_text": ""
                 },
                 {
                     "key": "field_5ebd95c9e4248",
@@ -2325,5 +2319,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1601379885
+    "modified": 1601380250
 }
