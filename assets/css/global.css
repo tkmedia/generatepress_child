@@ -734,8 +734,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .yoast_breadcrumb.breadcrumb_content_in_slider {background: none;padding: 0 0 20px;}
 .yoast_breadcrumb.breadcrumb_content_in_slider i.fal.fa-chevron-left {color: #ff6929;font-size: 12px;font-weight: 600;}
-.home_main_slider.type_images.content_under .home_main_slider_item {height: auto !important;min-height: 50px;}
-.home_main_slider.type_images.content_under .home_main_slider_item img {width: 100%;height: auto;}
+.home_main_slider.content_under .home_main_slider_item {height: auto !important;min-height: 50px;}
+.home_main_slider.content_under .home_main_slider_item img {width: 100%;height: auto;}
 
 @media (min-width: 1200px) {
 	.masthead_img_slider .main_slider_inner_wrap {width: 100%;}
