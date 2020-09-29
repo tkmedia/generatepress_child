@@ -1,0 +1,111 @@
+<?php
+/**
+ * The template used for displaying page content in page.php
+ *
+ * @package GeneratePress
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php generate_do_microdata( 'article' ); ?>>
+	<div class="inside-article">
+		
+		<div id="mh_hero">
+		<?php 
+		$page_top_slider_style = get_post_meta( get_the_ID(), 'hmhs_sty', true );	
+		if( $page_top_slider_style == 'full_slider' ):
+			get_template_part('partials/masthead-full' );
+		endif;
+		if( $page_top_slider_style == 'single_imbg' ):
+			get_template_part('partials/masthead-single' );
+		endif;
+		if( $page_top_slider_style == 'no_image_top' ):
+			get_template_part('partials/masthead-title' );
+		endif;	
+		if( $page_top_slider_style == 'manual_slider' ):
+			get_template_part('partials/masthead-full-manual' );
+		endif;			
+		if( $page_top_slider_style == 'clean_top' ):
+			get_template_part('partials/masthead-clean');
+		endif;
+		?>
+		</div>
+		<?php
+		/**
+		 * generate_before_content hook.
+		 *
+		 * @since 0.1
+		 *
+		 * @hooked generate_featured_page_header_inside_single - 10
+		 */
+		do_action( 'generate_before_content' );
+
+		if ( generate_show_title() ) : ?>
+
+			<header class="entry-header">
+				<?php
+				/**
+				 * generate_before_page_title hook.
+				 *
+				 * @since 2.4
+				 */
+				do_action( 'generate_before_page_title' );
+
+				the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' );
+
+				/**
+				 * generate_after_page_title hook.
+				 *
+				 * @since 2.4
+				 */
+				do_action( 'generate_after_page_title' );
+				?>
+			</header><!-- .entry-header -->
+
+		<?php endif;
+
+		/**
+		 * generate_after_entry_header hook.
+		 *
+		 * @since 0.1
+		 *
+		 * @hooked generate_post_image - 10
+		 */
+		do_action( 'generate_after_entry_header' );
+		?>
+
+		<div class="entry-content" itemprop="text">
+			<div class="flexible_content">
+				<?php get_template_part('partials/flexible-content'); ?>
+			</div>
+			
+			<?php
+			$thecontent = get_the_content();
+			if ( $post->post_content!=="" ) {
+			//if ( $thecontent ) {
+			 ?>
+			<div class="the_content">
+				<?php the_content();
+	
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'generatepress' ),
+					'after'  => '</div>',
+				) );
+				?>
+			</div>
+			<?php } ?>
+		</div><!-- .entry-content -->
+
+		<?php
+		/**
+		 * generate_after_content hook.
+		 *
+		 * @since 0.1
+		 */
+		do_action( 'generate_after_content' );
+		?>
+	</div><!-- .inside-article -->
+</article><!-- #post-## -->
